@@ -32,7 +32,7 @@ export default function UrgencyTimer() {
 
   return (
     <div className="bg-danger text-white p-3 rounded text-center shadow-sm mb-4">
-      <h5 className="fw-bold mb-1">🔥 50% Off Registration Fee (Normally 10000 PKR)</h5>
+      <h5 className="fw-bold mb-1">🔥 75% Off Registration Fee (Normally 10000 PKR)</h5>
       <p className="mb-0 fw-medium">Register for just 2500 PKR. Offer expires in: <span className="fs-5 fw-bold ms-2">{formatTime(timeLeft)}</span></p>
     </div>
   );
