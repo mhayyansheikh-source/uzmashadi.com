@@ -171,7 +171,7 @@ export default function Home() {
             <a href="/terms-of-service" className="text-white text-decoration-none small">Terms of Service</a>
           </div>
           <p className="mb-1">&copy; {new Date().getFullYear()} Uzma Shadi Multan. All Rights Reserved.</p>
-          <p className="small text-muted mb-0">Developed by <a href="https://seoustaad.com" target="_blank" rel="noopener noreferrer" className="text-gold text-decoration-none fw-bold">seoustaad.com</a></p>
+          <p className="small text-light mb-0 mt-2">Developed by <a href="https://seoustaad.com" target="_blank" rel="noopener noreferrer" className="text-gold fw-bold" style={{ textDecoration: 'underline', textDecorationColor: 'var(--secondary-color)' }}>seoustaad.com</a></p>
         </Container>
       </footer>
     </>
