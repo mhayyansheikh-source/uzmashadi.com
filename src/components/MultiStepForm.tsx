@@ -50,7 +50,7 @@ export default function MultiStepForm() {
       return;
     }
 
-    const message = `*New Registration - Uzma Shadi Multan*
+    const message = `*New Registration - uzmashadi.com Multan*
     
 *Basic Info*
 Gender: ${data.gender}

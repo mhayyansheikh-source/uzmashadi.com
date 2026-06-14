@@ -3,8 +3,8 @@ import { Container } from 'react-bootstrap';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Uzma Shadi',
-  description: 'Privacy Policy for Uzma Shadi in accordance with the laws of Pakistan (PECA 2016).',
+  title: 'Privacy Policy | uzmashadi.com',
+  description: 'Privacy Policy for uzmashadi.com in accordance with the laws of Pakistan (PECA 2016).',
 };
 
 export default function PrivacyPolicy() {
@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
 
         <section className="mb-4">
           <h4 className="fw-semibold">1. Introduction</h4>
-          <p>Welcome to Uzma Shadi. We respect your privacy and are committed to protecting your personal data in compliance with the laws of the Islamic Republic of Pakistan, particularly the Prevention of Electronic Crimes Act (PECA), 2016.</p>
+          <p>Welcome to uzmashadi.com. We respect your privacy and are committed to protecting your personal data in compliance with the laws of the Islamic Republic of Pakistan, particularly the Prevention of Electronic Crimes Act (PECA), 2016.</p>
         </section>
 
         <section className="mb-4">

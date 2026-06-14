@@ -6,7 +6,7 @@ import LegalAlert from '@/components/LegalAlert';
 import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: 'Uzma Shadi | Find Your Perfect Match in Multan',
+  title: 'uzmashadi.com | Find Your Perfect Match in Multan',
   description: 'The premier matchmaking service for Multan, Pakistan. Find genuine, verified rishtas in Multan today.',
 };
 

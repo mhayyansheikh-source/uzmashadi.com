@@ -74,7 +74,7 @@ export default function Home() {
                     <div className="d-flex text-gold mb-3">
                       <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
                     </div>
-                    <p className="fst-italic text-secondary mb-4">"Alhamdulillah, through Uzma Shadi we found the perfect match for our daughter right here in Multan. The process was so easy and respectful."</p>
+                    <p className="fst-italic text-secondary mb-4">"Alhamdulillah, through uzmashadi.com we found the perfect match for our daughter right here in Multan. The process was so easy and respectful."</p>
                     <div className="d-flex align-items-center">
                       <div className="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px'}}>
                         A
@@ -103,7 +103,7 @@ export default function Home() {
               <h2 className="fw-bold mb-4">The Premier Matchmaker in Multan</h2>
               <div className="bg-white p-4 p-md-5 rounded shadow-sm">
                 <p className="mb-4">
-                  Welcome to Uzma Shadi, the leading <strong>Rishta service in Multan</strong>. Finding a life partner is one of the most important decisions in life, and our localized approach ensures that you connect with families that share your cultural values, traditions, and background right here in the City of Saints.
+                  Welcome to uzmashadi.com, the leading <strong>Rishta service in Multan</strong>. Finding a life partner is one of the most important decisions in life, and our localized approach ensures that you connect with families that share your cultural values, traditions, and background right here in the City of Saints.
                 </p>
                 <p className="mb-4">
                   Unlike generic matrimonial sites, we focus heavily on the Multan region, ensuring that every profile is verified and genuine. Our dedicated team works tirelessly to provide a safe, secure, and highly effective matchmaking experience. (Note: This section will be expanded to the full 4500-word GEO-optimized content structure).
@@ -123,7 +123,7 @@ export default function Home() {
             <Col lg={8} className="mx-auto">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0" className="mb-3 border rounded">
-                  <Accordion.Header>How does Uzma Shadi work in Multan?</Accordion.Header>
+                  <Accordion.Header>How does uzmashadi.com work in Multan?</Accordion.Header>
                   <Accordion.Body>
                     Simply fill out our 5-step registration form above, attach your JazzCash registration receipt, and your details will be sent directly to our secure WhatsApp line. Our matchmakers will then contact you with suitable proposals from Multan.
                   </Accordion.Body>
@@ -162,15 +162,15 @@ export default function Home() {
       <footer className="bg-dark text-white py-5 text-center">
         <Container>
           <div className="mb-4">
-            <img src="/logo.png" alt="Uzma Shadi Logo" width="80" height="80" className="rounded-circle mb-3 border border-3" style={{ borderColor: 'var(--secondary-color)' }} />
-            <h4 className="fw-bold text-gold">Uzma Shadi</h4>
+            <img src="/logo.png" alt="uzmashadi.com Logo" width="80" height="80" className="rounded-circle mb-3 border border-3" style={{ borderColor: 'var(--secondary-color)' }} />
+            <h4 className="fw-bold text-gold">uzmashadi.com</h4>
           </div>
           <div className="mb-3 d-flex justify-content-center gap-3">
             <a href="/privacy-policy" className="text-white text-decoration-none small">Privacy Policy</a>
             <span className="text-muted">|</span>
             <a href="/terms-of-service" className="text-white text-decoration-none small">Terms of Service</a>
           </div>
-          <p className="mb-1">&copy; {new Date().getFullYear()} Uzma Shadi Multan. All Rights Reserved.</p>
+          <p className="mb-1">&copy; {new Date().getFullYear()} uzmashadi.com Multan. All Rights Reserved.</p>
           <p className="small text-light mb-0 mt-2">Developed by <a href="https://seoustaad.com" target="_blank" rel="noopener noreferrer" className="text-gold fw-bold" style={{ textDecoration: 'underline', textDecorationColor: 'var(--secondary-color)' }}>seoustaad.com</a></p>
         </Container>
       </footer>

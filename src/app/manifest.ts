@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Uzma Shadi | Matchmaker in Multan',
-    short_name: 'Uzma Shadi',
+    name: 'uzmashadi.com | Matchmaker in Multan',
+    short_name: 'uzmashadi.com',
     description: 'The premier matchmaking service for Multan, Pakistan. Find genuine, verified rishtas today.',
     start_url: '/',
     display: 'standalone',

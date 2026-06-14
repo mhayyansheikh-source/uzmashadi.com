@@ -3,8 +3,8 @@ import { Container } from 'react-bootstrap';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Uzma Shadi',
-  description: 'Terms of Service for Uzma Shadi platform.',
+  title: 'Terms of Service | uzmashadi.com',
+  description: 'Terms of Service for uzmashadi.com platform.',
 };
 
 export default function TermsOfService() {
@@ -16,7 +16,7 @@ export default function TermsOfService() {
 
         <section className="mb-4">
           <h4 className="fw-semibold">1. Acceptance of Terms</h4>
-          <p>By accessing and using Uzma Shadi, you agree to comply with and be bound by the following Terms of Service. These terms are governed by the laws of Pakistan. If you disagree with any part of these terms, please do not use our website.</p>
+          <p>By accessing and using uzmashadi.com, you agree to comply with and be bound by the following Terms of Service. These terms are governed by the laws of Pakistan. If you disagree with any part of these terms, please do not use our website.</p>
         </section>
 
         <section className="mb-4">
@@ -42,7 +42,7 @@ export default function TermsOfService() {
 
         <section className="mb-4">
           <h4 className="fw-semibold">5. Limitation of Liability</h4>
-          <p>Uzma Shadi acts as a facilitator for matchmaking. While we strive to verify profiles to the best of our ability, we are not liable for any discrepancies, disputes, or outcomes arising from marriages arranged through this platform. Users are advised to conduct their own independent verification before finalizing any proposals.</p>
+          <p>uzmashadi.com acts as a facilitator for matchmaking. While we strive to verify profiles to the best of our ability, we are not liable for any discrepancies, disputes, or outcomes arising from marriages arranged through this platform. Users are advised to conduct their own independent verification before finalizing any proposals.</p>
         </section>
 
         <section className="mb-4">

@@ -11,7 +11,7 @@ const actions = [
   "started chatting with a verified profile",
   "just joined the premium registry",
   "uploaded their verification receipt",
-  "got engaged this week through Uzma Shadi",
+  "got engaged this week through uzmashadi.com",
   "is currently viewing profiles",
 ];
 

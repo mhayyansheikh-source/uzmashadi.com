@@ -46,7 +46,7 @@ export default function LegalAlert() {
             <div className="d-flex align-items-center mb-3 mb-md-0">
               <FaInfoCircle size={24} className="text-primary me-3 flex-shrink-0" style={{ color: 'var(--primary-color)' }} />
               <p className="mb-0 small text-dark">
-                <strong>Legal Notice:</strong> By using Uzma Shadi, you agree to our <a href="/terms-of-service" className="text-decoration-underline text-dark fw-bold">Terms of Service</a> and <a href="/privacy-policy" className="text-decoration-underline text-dark fw-bold">Privacy Policy</a>. We strictly comply with the Prevention of Electronic Crimes Act (PECA), 2016. All profiles must be authentic and lawful.
+                <strong>Legal Notice:</strong> By using uzmashadi.com, you agree to our <a href="/terms-of-service" className="text-decoration-underline text-dark fw-bold">Terms of Service</a> and <a href="/privacy-policy" className="text-decoration-underline text-dark fw-bold">Privacy Policy</a>. We strictly comply with the Prevention of Electronic Crimes Act (PECA), 2016. All profiles must be authentic and lawful.
               </p>
             </div>
             <Button className="btn-primary-custom ms-md-3 flex-shrink-0" onClick={handleAccept} style={{ padding: '8px 20px' }}>

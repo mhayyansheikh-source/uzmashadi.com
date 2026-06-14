@@ -35,13 +35,13 @@ export default function Header() {
         <Navbar.Brand href="/" onClick={(e) => scrollToSection(e, 'hero')} className="d-flex align-items-center cursor-pointer">
           <img 
             src="/logo.png" 
-            alt="Uzma Shadi Logo" 
+            alt="uzmashadi.com Logo" 
             width="50" 
             height="50" 
             className="d-inline-block align-text-top rounded-circle me-3 border border-2" 
             style={{ borderColor: 'var(--secondary-color)' }} 
           />
-          <span className="fw-bold fs-4" style={{ color: 'var(--primary-color)' }}>Uzma Shadi</span>
+          <span className="fw-bold fs-4" style={{ color: 'var(--primary-color)' }}>uzmashadi.com</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
