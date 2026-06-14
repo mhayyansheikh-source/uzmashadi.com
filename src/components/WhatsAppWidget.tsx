@@ -12,6 +12,12 @@ export default function WhatsAppWidget() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  React.useEffect(() => {
+    const openWidget = () => setShow(true);
+    window.addEventListener('open-whatsapp-widget', openWidget);
+    return () => window.removeEventListener('open-whatsapp-widget', openWidget);
+  }, []);
+
   return (
     <>
       {/* Floating Button */}
