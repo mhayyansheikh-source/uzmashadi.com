@@ -90,11 +90,14 @@ export default function Home() {
             <Col lg={10} className="mx-auto">
               <h2 className="fw-bold mb-4">The Premier Matchmaker in Multan</h2>
               <div className="bg-white p-4 p-md-5 rounded shadow-sm">
-                <p className="mb-4">
-                  Welcome to uzmashadi.com, the leading <strong>Rishta service in Multan</strong>. Finding a life partner is one of the most important decisions in life, and our localized approach ensures that you connect with families that share your cultural values, traditions, and background right here in the City of Saints.
+                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                  Finding a life partner for your child is one of the most sacred responsibilities a parent has. It’s not just about matching two individuals; it’s about uniting two families, two backgrounds, and two sets of values. Here at <strong>Uzma Shadi</strong>, we completely understand the weight of this decision. We aren't just a website—we are parents and community members right here in Multan who know how stressful and overwhelming the rishta process can be in today's fast-paced world.
                 </p>
-                <p className="mb-4">
-                  Unlike generic matrimonial sites, we focus heavily on the Multan region, ensuring that every profile is verified and genuine. Our dedicated team works tirelessly to provide a safe, secure, and highly effective matchmaking experience. (Note: This section will be expanded to the full 4500-word GEO-optimized content structure).
+                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                  What makes us different from those giant, impersonal matrimonial apps is our deep roots in South Punjab. When you trust us with your family's details, you aren't just uploading data to an algorithm. You are connecting with real people who take the time to personally verify every single profile. We know the neighborhoods, we understand the local traditions, and we respect your privacy above all else. Our strict verification process means you never have to worry about fake profiles or non-serious people wasting your precious time.
+                </p>
+                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                  Whether you are looking for an educated professional in Gulgasht, a business family in Cantt, or an overseas Pakistani longing for a connection back home, we do the heavy lifting for you. All it takes is a simple WhatsApp message to start a safe, respectful, and transparent journey toward finding the perfect match. Let us treat your family like our own.
                 </p>
                 {/* Simulated extensive content... */}
               </div>
