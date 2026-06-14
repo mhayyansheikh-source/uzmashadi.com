@@ -2,12 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -53,10 +57,20 @@ export default function Header() {
             <Nav.Link 
               href="#register-form" 
               onClick={(e) => scrollToSection(e, 'register-form')} 
-              className="btn btn-primary-custom text-white ms-lg-3 px-4 py-2 rounded-pill"
+              className="btn btn-primary-custom text-white ms-lg-3 px-4 py-2 rounded-pill mb-3 mb-lg-0"
             >
               Register Now
             </Nav.Link>
+            {mounted && (
+              <button 
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="btn btn-link text-dark ms-lg-2 p-2 border-0 rounded-circle"
+                style={{ background: 'var(--border-color)' }}
+                aria-label="Toggle Dark Mode"
+              >
+                {theme === 'dark' ? <FaSun size={20} className="text-warning" /> : <FaMoon size={20} />}
+              </button>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

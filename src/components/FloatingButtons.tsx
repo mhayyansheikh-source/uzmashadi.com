@@ -68,7 +68,7 @@ export default function FloatingButtons() {
             style={{
               position: 'fixed',
               right: '20px',
-              bottom: '30px',
+              bottom: '100px',
               zIndex: 1040,
             }}
           >

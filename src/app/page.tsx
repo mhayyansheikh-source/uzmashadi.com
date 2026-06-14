@@ -4,6 +4,8 @@ import React from 'react';
 import { Container, Row, Col, Card, Accordion } from 'react-bootstrap';
 import { FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import MultiStepForm from '@/components/MultiStepForm';
+import MatchCalculator from '@/components/MatchCalculator';
+import UrgencyTimer from '@/components/UrgencyTimer';
 
 export default function Home() {
   return (
@@ -52,7 +54,23 @@ export default function Home() {
               </ul>
             </Col>
             
-            <Col lg={6} id="register-form">
+            <Col lg={6}>
+              <MatchCalculator />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Registration Form Section */}
+      <section id="register-form" className="py-5 bg-light">
+        <Container>
+          <div className="text-center mb-4">
+            <h2 className="fw-bold mb-3">Begin Your Journey Today</h2>
+            <p className="text-secondary">Complete the 5 simple steps below to register your profile.</p>
+          </div>
+          <Row>
+            <Col lg={8} className="mx-auto">
+              <UrgencyTimer />
               <MultiStepForm />
             </Col>
           </Row>
