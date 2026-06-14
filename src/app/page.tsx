@@ -52,7 +52,7 @@ export default function Home() {
               </ul>
             </Col>
             
-            <Col lg={6}>
+            <Col lg={6} id="register-form">
               <MultiStepForm />
             </Col>
           </Row>
@@ -161,7 +161,13 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-dark text-white py-4 text-center">
         <Container>
-          <p className="mb-0">&copy; {new Date().getFullYear()} Uzma Shadi Multan. All Rights Reserved.</p>
+          <div className="mb-3 d-flex justify-content-center gap-3">
+            <a href="/privacy-policy" className="text-white text-decoration-none small">Privacy Policy</a>
+            <span className="text-muted">|</span>
+            <a href="/terms-of-service" className="text-white text-decoration-none small">Terms of Service</a>
+          </div>
+          <p className="mb-1">&copy; {new Date().getFullYear()} Uzma Shadi Multan. All Rights Reserved.</p>
+          <p className="small text-muted mb-0">Developed by <a href="https://seoustaad.com" target="_blank" rel="noopener noreferrer" className="text-gold text-decoration-none fw-bold">seoustaad.com</a></p>
         </Container>
       </footer>
     </>
