@@ -6,6 +6,7 @@ import LegalAlert from '@/components/LegalAlert';
 import Header from '@/components/Header';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
 import { Providers } from './Providers';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'uzmashadi.com | Find Your Perfect Match in Multan',
@@ -71,6 +72,7 @@ export default function RootLayout({
           <WhatsAppWidget />
           <LegalAlert />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
