@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { rawTestimonials } from './TestimonialMarquee';
 
-const names = ["Ali", "Fatima", "Usman", "Ayesha", "Bilal", "Zainab", "Hamza", "Maryam", "Saad", "Hira", "Omer", "Sana", "Hassan", "Iqra", "Zeeshan"];
-const areas = ["Gulgasht Colony", "Multan Cantt", "Bosan Road", "Shah Rukn-e-Alam", "Mumtazabad", "Nawan Shehr", "Tariqabad", "WAPDA Town", "MDA Chowk", "Chungi No 9", "Buch Villas", "Royal Orchard", "Shalimar Colony", "Peer Khurshid Colony"];
 const actions = [
   "just registered looking for a match",
   "found a perfect match today",
@@ -15,20 +14,21 @@ const actions = [
   "is currently viewing profiles",
 ];
 
-// Generate 100 unique messages
+// Generate messages based on the massive real testimonial data
 const generateMessages = () => {
   const msgs: string[] = [];
   msgs.push("🔥 <strong>5 New Matches</strong> Found in Multan Today! Register now before slots fill up.");
   msgs.push("⚡ <strong>High Demand:</strong> 12 families from Multan Cantt registered today.");
   msgs.push("💍 <strong>Success:</strong> A family from Gulgasht Colony finalized their Rishta yesterday!");
   
-  while (msgs.length < 100) {
-    const name = names[Math.floor(Math.random() * names.length)];
-    const area = areas[Math.floor(Math.random() * areas.length)];
+  // Create messages using the consistent dummy data
+  rawTestimonials.forEach((testimonial) => {
     const action = actions[Math.floor(Math.random() * actions.length)];
-    msgs.push(`👤 <strong>${name}</strong> from ${area} ${action}.`);
-  }
-  return msgs;
+    msgs.push(`👤 <strong>${testimonial.name}</strong> from ${testimonial.loc} ${action}.`);
+  });
+
+  // Shuffle the messages so they don't appear in the exact same order as the marquee
+  return msgs.sort(() => Math.random() - 0.5);
 };
 
 const messages = generateMessages();

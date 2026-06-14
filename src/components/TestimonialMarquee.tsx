@@ -4,8 +4,8 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa';
 
-// Generating 50 diverse, realistic testimonials for Multan
-const rawTestimonials = [
+// Generating 100 diverse, realistic testimonials for Multan
+export const rawTestimonials = [
   { name: 'Sheikh Family', loc: 'Gulgasht Colony', text: 'Found an amazing match for our son within 2 months. Highly professional and respectful service.' },
   { name: 'Rajput Family', loc: 'Cantonment', text: 'Alhamdulillah, the best rishta service in Multan. They completely understood our requirements.' },
   { name: 'Awan Family', loc: 'Bosan Road', text: 'Very transparent process. We felt secure sharing our details with Uzma Shadi.' },
