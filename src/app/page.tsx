@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section py-5 position-relative" style={{ minHeight: '80vh', background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
+      <section id="hero" className="hero-section py-5 position-relative" style={{ minHeight: '80vh', background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Trust / Testimonials Section */}
-      <section className="py-5 bg-white">
+      <section id="testimonials" className="py-5 bg-white">
         <Container>
           <div className="text-center mb-5">
             <h2 className="fw-bold mb-3">Trusted by Families Across Pakistan</h2>
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* SEO / Content Section (Placeholder for 4500 words) */}
-      <section className="py-5 bg-light">
+      <section id="about" className="py-5 bg-light">
         <Container>
           <Row>
             <Col lg={10} className="mx-auto">
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-5 bg-white">
+      <section id="faqs" className="py-5 bg-white">
         <Container>
           <h2 className="fw-bold text-center mb-5">Frequently Asked Questions</h2>
           <Row>
