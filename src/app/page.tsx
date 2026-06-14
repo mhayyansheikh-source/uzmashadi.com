@@ -6,6 +6,7 @@ import { FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
 import MultiStepForm from '@/components/MultiStepForm';
 import MatchCalculator from '@/components/MatchCalculator';
 import UrgencyTimer from '@/components/UrgencyTimer';
+import TestimonialMarquee from '@/components/TestimonialMarquee';
 
 export default function Home() {
   return (
@@ -78,39 +79,8 @@ export default function Home() {
       </section>
 
       {/* Trust / Testimonials Section */}
-      <section id="testimonials" className="py-5 bg-white">
-        <Container>
-          <div className="text-center mb-5">
-            <h2 className="fw-bold mb-3">Trusted by Families Across Pakistan</h2>
-            <p className="text-muted">Over 100+ successful matches in Multan and beyond.</p>
-          </div>
-          <Row className="g-4">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <Col md={4} key={i}>
-                <Card className="h-100 shadow-sm border-0 bg-light">
-                  <Card.Body className="p-4">
-                    <div className="d-flex text-gold mb-3">
-                      <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
-                    </div>
-                    <p className="fst-italic text-secondary mb-4">"Alhamdulillah, through uzmashadi.com we found the perfect match for our daughter right here in Multan. The process was so easy and respectful."</p>
-                    <div className="d-flex align-items-center">
-                      <div className="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px'}}>
-                        A
-                      </div>
-                      <div>
-                        <h6 className="mb-0 fw-bold">Ali Family</h6>
-                        <small className="text-muted">Gulgasht Colony, Multan</small>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-          <div className="text-center mt-5">
-            <button className="btn-secondary-custom">View All 100+ Testimonials</button>
-          </div>
-        </Container>
+      <section id="testimonials">
+        <TestimonialMarquee />
       </section>
 
       {/* SEO / Content Section (Placeholder for 4500 words) */}
