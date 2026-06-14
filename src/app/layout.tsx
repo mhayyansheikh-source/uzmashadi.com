@@ -6,6 +6,9 @@ import LegalAlert from '@/components/LegalAlert';
 import Header from '@/components/Header';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
 import { Providers } from './Providers';
+import { Toaster } from 'react-hot-toast';
+import SocialProofToast from '@/components/SocialProofToast';
+import ExitIntentPopup from '@/components/ExitIntentPopup';
 
 export const metadata: Metadata = {
   title: 'uzmashadi.com | Find Your Perfect Match in Multan',
@@ -62,6 +65,9 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
+          <Toaster />
+          <SocialProofToast />
+          <ExitIntentPopup />
           <FomoBar />
           <Header />
           <main>

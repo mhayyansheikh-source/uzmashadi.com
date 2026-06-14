@@ -3,6 +3,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Accordion } from 'react-bootstrap';
 import { FaCheckCircle, FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import MultiStepForm from '@/components/MultiStepForm';
 import MatchCalculator from '@/components/MatchCalculator';
 import UrgencyTimer from '@/components/UrgencyTimer';
@@ -12,51 +14,55 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section id="hero" className="hero-section py-5 position-relative" style={{ minHeight: '80vh', background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
+      <section id="hero" className="hero-section py-5 position-relative animated-gradient-bg" style={{ minHeight: '80vh' }}>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
-              <div className="d-inline-flex align-items-center bg-white rounded-pill px-3 py-2 mb-4 shadow-sm border border-1 border-light">
-                <img src="/logo.png" alt="Icon" width="24" height="24" className="rounded-circle me-2" />
-                <span className="fw-semibold text-secondary">#1 Matchmaker in Multan</span>
-              </div>
-              
-              <h1 className="display-4 fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>
-                Find Your Perfect <br/><span className="text-gold">Rishta in Multan</span>
-              </h1>
-              
-              <p className="lead text-secondary mb-5">
-                Join thousands of Multani families who have found their perfect match through our secure, localized, and trusted platform.
-              </p>
-              
-              <div className="d-flex align-items-center gap-4 mb-4">
-                <div className="d-flex text-gold">
-                  <FaStar size={24}/><FaStar size={24}/><FaStar size={24}/><FaStar size={24}/><FaStar size={24}/>
+              <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+                <div className="d-inline-flex align-items-center bg-white rounded-pill px-3 py-2 mb-4 shadow-sm border border-1 border-light">
+                  <Image src="/logo.png" alt="Icon" width={24} height={24} className="rounded-circle me-2" />
+                  <span className="fw-semibold text-secondary">#1 Matchmaker in Multan</span>
                 </div>
-                <div>
-                  <h5 className="mb-0 fw-bold">4.9/5 Rating</h5>
-                  <span className="text-muted small">Based on 500+ happy couples</span>
+                
+                <h1 className="display-4 fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>
+                  Find Your Perfect <br/><span className="text-gold">Rishta in Multan</span>
+                </h1>
+                
+                <p className="lead text-secondary mb-5">
+                  Join thousands of Multani families who have found their perfect match through our secure, localized, and trusted platform.
+                </p>
+                
+                <div className="d-flex align-items-center gap-4 mb-4">
+                  <div className="d-flex text-gold">
+                    <FaStar size={24}/><FaStar size={24}/><FaStar size={24}/><FaStar size={24}/><FaStar size={24}/>
+                  </div>
+                  <div>
+                    <h5 className="mb-0 fw-bold">4.9/5 Rating</h5>
+                    <span className="text-muted small">Based on 500+ happy couples</span>
+                  </div>
                 </div>
-              </div>
-              
-              <ul className="list-unstyled">
-                <li className="mb-3 d-flex align-items-center">
-                  <FaCheckCircle className="text-success me-3" size={20} />
-                  <span className="fw-medium">100% Verified Local Profiles</span>
-                </li>
-                <li className="mb-3 d-flex align-items-center">
-                  <FaCheckCircle className="text-success me-3" size={20} />
-                  <span className="fw-medium">Direct WhatsApp Connection</span>
-                </li>
-                <li className="mb-3 d-flex align-items-center">
-                  <FaCheckCircle className="text-success me-3" size={20} />
-                  <span className="fw-medium">Strict Privacy & Security</span>
-                </li>
-              </ul>
+                
+                <ul className="list-unstyled">
+                  <li className="mb-3 d-flex align-items-center">
+                    <FaCheckCircle className="text-success me-3" size={20} />
+                    <span className="fw-medium">100% Verified Local Profiles</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-center">
+                    <FaCheckCircle className="text-success me-3" size={20} />
+                    <span className="fw-medium">Direct WhatsApp Connection</span>
+                  </li>
+                  <li className="mb-3 d-flex align-items-center">
+                    <FaCheckCircle className="text-success me-3" size={20} />
+                    <span className="fw-medium">Strict Privacy & Security</span>
+                  </li>
+                </ul>
+              </motion.div>
             </Col>
             
             <Col lg={6}>
-              <MatchCalculator />
+              <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+                <MatchCalculator />
+              </motion.div>
             </Col>
           </Row>
         </Container>
@@ -65,14 +71,16 @@ export default function Home() {
       {/* Registration Form Section */}
       <section id="register-form" className="py-5 bg-light">
         <Container>
-          <div className="text-center mb-4">
+          <motion.div className="text-center mb-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <h2 className="fw-bold mb-3">Begin Your Journey Today</h2>
             <p className="text-secondary">Complete the 5 simple steps below to register your profile.</p>
-          </div>
+          </motion.div>
           <Row>
             <Col lg={8} className="mx-auto">
-              <UrgencyTimer />
-              <MultiStepForm />
+              <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+                <UrgencyTimer />
+                <MultiStepForm />
+              </motion.div>
             </Col>
           </Row>
         </Container>
@@ -88,19 +96,21 @@ export default function Home() {
         <Container>
           <Row>
             <Col lg={10} className="mx-auto">
-              <h2 className="fw-bold mb-4">The Premier Matchmaker in Multan</h2>
-              <div className="bg-white p-4 p-md-5 rounded shadow-sm">
-                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
-                  Finding a life partner for your child is one of the most sacred responsibilities a parent has. It’s not just about matching two individuals; it’s about uniting two families, two backgrounds, and two sets of values. Here at <strong>Uzma Shadi</strong>, we completely understand the weight of this decision. We aren't just a website—we are parents and community members right here in Multan who know how stressful and overwhelming the rishta process can be in today's fast-paced world.
-                </p>
-                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
-                  What makes us different from those giant, impersonal matrimonial apps is our deep roots in South Punjab. When you trust us with your family's details, you aren't just uploading data to an algorithm. You are connecting with real people who take the time to personally verify every single profile. We know the neighborhoods, we understand the local traditions, and we respect your privacy above all else. Our strict verification process means you never have to worry about fake profiles or non-serious people wasting your precious time.
-                </p>
-                <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
-                  Whether you are looking for an educated professional in Gulgasht, a business family in Cantt, or an overseas Pakistani longing for a connection back home, we do the heavy lifting for you. All it takes is a simple WhatsApp message to start a safe, respectful, and transparent journey toward finding the perfect match. Let us treat your family like our own.
-                </p>
-                {/* Simulated extensive content... */}
-              </div>
+              <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+                <h2 className="fw-bold mb-4">The Premier Matchmaker in Multan</h2>
+                <div className="bg-white p-4 p-md-5 rounded shadow-sm">
+                  <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                    Finding a life partner for your child is one of the most sacred responsibilities a parent has. It’s not just about matching two individuals; it’s about uniting two families, two backgrounds, and two sets of values. Here at <strong>Uzma Shadi</strong>, we completely understand the weight of this decision. We aren't just a website—we are parents and community members right here in Multan who know how stressful and overwhelming the rishta process can be in today's fast-paced world.
+                  </p>
+                  <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                    What makes us different from those giant, impersonal matrimonial apps is our deep roots in South Punjab. When you trust us with your family's details, you aren't just uploading data to an algorithm. You are connecting with real people who take the time to personally verify every single profile. We know the neighborhoods, we understand the local traditions, and we respect your privacy above all else. Our strict verification process means you never have to worry about fake profiles or non-serious people wasting your precious time.
+                  </p>
+                  <p className="mb-4 text-secondary" style={{ lineHeight: '1.8' }}>
+                    Whether you are looking for an educated professional in Gulgasht, a business family in Cantt, or an overseas Pakistani longing for a connection back home, we do the heavy lifting for you. All it takes is a simple WhatsApp message to start a safe, respectful, and transparent journey toward finding the perfect match. Let us treat your family like our own.
+                  </p>
+                  {/* Simulated extensive content... */}
+                </div>
+              </motion.div>
             </Col>
           </Row>
         </Container>
@@ -109,41 +119,43 @@ export default function Home() {
       {/* FAQ Section */}
       <section id="faqs" className="py-5 bg-white">
         <Container>
-          <h2 className="fw-bold text-center mb-5">Frequently Asked Questions</h2>
+          <motion.h2 className="fw-bold text-center mb-5" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>Frequently Asked Questions</motion.h2>
           <Row>
             <Col lg={8} className="mx-auto">
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0" className="mb-3 border rounded">
-                  <Accordion.Header>How does uzmashadi.com work in Multan?</Accordion.Header>
-                  <Accordion.Body>
-                    Simply fill out our 5-step registration form above, attach your JazzCash registration receipt, and your details will be sent directly to our secure WhatsApp line. Our matchmakers will then contact you with suitable proposals from Multan.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1" className="mb-3 border rounded">
-                  <Accordion.Header>Is my personal information secure?</Accordion.Header>
-                  <Accordion.Body>
-                    Yes, absolutely. We take privacy very seriously. Your details are strictly confidential and are only shared with verified families who match your criteria and with your explicit consent.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="2" className="mb-3 border rounded">
-                  <Accordion.Header>What is the registration fee?</Accordion.Header>
-                  <Accordion.Body>
-                    The initial registration fee is 2500 PKR, payable via JazzCash to +92 312 6327071. This fee ensures that only serious families are registered on our platform, maintaining the high quality of our service.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3" className="mb-3 border rounded">
-                  <Accordion.Header>Do you cater to specific casts and sects?</Accordion.Header>
-                  <Accordion.Body>
-                    Yes, our database includes families from all major casts and sects in Pakistan, with a strong focus on the Multan area. We ensure matches respect your specific religious and cultural preferences.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="4" className="mb-3 border rounded">
-                  <Accordion.Header>Can overseas Pakistanis register?</Accordion.Header>
-                  <Accordion.Body>
-                    Yes! Many families in Multan are looking for matches for their children residing abroad. Overseas Pakistanis can easily register and communicate via WhatsApp.
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+              <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}>
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="0" className="mb-3 border rounded">
+                    <Accordion.Header>How does uzmashadi.com work in Multan?</Accordion.Header>
+                    <Accordion.Body>
+                      Simply fill out our 5-step registration form above, attach your JazzCash registration receipt, and your details will be sent directly to our secure WhatsApp line. Our matchmakers will then contact you with suitable proposals from Multan.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1" className="mb-3 border rounded">
+                    <Accordion.Header>Is my personal information secure?</Accordion.Header>
+                    <Accordion.Body>
+                      Yes, absolutely. We take privacy very seriously. Your details are strictly confidential and are only shared with verified families who match your criteria and with your explicit consent.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2" className="mb-3 border rounded">
+                    <Accordion.Header>What is the registration fee?</Accordion.Header>
+                    <Accordion.Body>
+                      The initial registration fee is 2500 PKR, payable via JazzCash to +92 312 6327071. This fee ensures that only serious families are registered on our platform, maintaining the high quality of our service.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3" className="mb-3 border rounded">
+                    <Accordion.Header>Do you cater to specific casts and sects?</Accordion.Header>
+                    <Accordion.Body>
+                      Yes, our database includes families from all major casts and sects in Pakistan, with a strong focus on the Multan area. We ensure matches respect your specific religious and cultural preferences.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4" className="mb-3 border rounded">
+                    <Accordion.Header>Can overseas Pakistanis register?</Accordion.Header>
+                    <Accordion.Body>
+                      Yes! Many families in Multan are looking for matches for their children residing abroad. Overseas Pakistanis can easily register and communicate via WhatsApp.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </motion.div>
             </Col>
           </Row>
         </Container>
@@ -153,7 +165,7 @@ export default function Home() {
       <footer className="bg-dark text-white py-5 text-center">
         <Container>
           <div className="mb-4">
-            <img src="/logo.png" alt="uzmashadi.com Logo" width="80" height="80" className="rounded-circle mb-3 border border-3" style={{ borderColor: 'var(--secondary-color)' }} />
+            <Image src="/logo.png" alt="uzmashadi.com Logo" width={80} height={80} className="rounded-circle mb-3 border border-3" style={{ borderColor: 'var(--secondary-color)' }} />
             <h4 className="fw-bold text-gold">uzmashadi.com</h4>
           </div>
           <div className="mb-3 d-flex justify-content-center gap-3">

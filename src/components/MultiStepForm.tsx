@@ -125,18 +125,22 @@ Address: ${data.homeAddress}
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                 </Form.Select>
+                <Form.Control.Feedback type="invalid">Gender is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Marital Status & Kids</Form.Label>
                 <Form.Control type="text" placeholder="e.g., Single, Divorced - 1 kid" {...register('maritalStatus', { required: true })} isInvalid={!!errors.maritalStatus} />
+                <Form.Control.Feedback type="invalid">Marital status is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Age</Form.Label>
                 <Form.Control type="number" placeholder="e.g., 28" {...register('age', { required: true })} isInvalid={!!errors.age} />
+                <Form.Control.Feedback type="invalid">Age is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Height</Form.Label>
                 <Form.Control type="text" placeholder="e.g., 5.8" {...register('height', { required: true })} isInvalid={!!errors.height} />
+                <Form.Control.Feedback type="invalid">Height is required.</Form.Control.Feedback>
               </Form.Group>
             </motion.div>
           )}
@@ -147,10 +151,12 @@ Address: ${data.homeAddress}
               <Form.Group className="mb-3">
                 <Form.Label>Education</Form.Label>
                 <Form.Control type="text" placeholder="e.g., BS Maths / MBA" {...register('education', { required: true })} isInvalid={!!errors.education} />
+                <Form.Control.Feedback type="invalid">Education is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Profession</Form.Label>
                 <Form.Control type="text" placeholder="e.g., Digital Marketer, Doctor" {...register('profession', { required: true })} isInvalid={!!errors.profession} />
+                <Form.Control.Feedback type="invalid">Profession is required.</Form.Control.Feedback>
               </Form.Group>
             </motion.div>
           )}
@@ -161,6 +167,7 @@ Address: ${data.homeAddress}
               <Form.Group className="mb-3">
                 <Form.Label>Cast</Form.Label>
                 <Form.Control type="text" placeholder="e.g., Ansari, Rajput" {...register('cast', { required: true })} isInvalid={!!errors.cast} />
+                <Form.Control.Feedback type="invalid">Cast is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Sect</Form.Label>
@@ -171,6 +178,7 @@ Address: ${data.homeAddress}
                   <option value="Ahl-e-Hadith">Ahl-e-Hadith</option>
                   <option value="Other">Other</option>
                 </Form.Select>
+                <Form.Control.Feedback type="invalid">Sect is required.</Form.Control.Feedback>
               </Form.Group>
             </motion.div>
           )}
@@ -181,18 +189,22 @@ Address: ${data.homeAddress}
               <Form.Group className="mb-3">
                 <Form.Label>Father's Details</Form.Label>
                 <Form.Control type="text" placeholder="e.g., Car Mechanic Workshop / Deceased" {...register('fatherDetails', { required: true })} isInvalid={!!errors.fatherDetails} />
+                <Form.Control.Feedback type="invalid">Father's details are required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Mother's Details</Form.Label>
                 <Form.Control type="text" placeholder="e.g., Housewife / Deceased" {...register('motherDetails', { required: true })} isInvalid={!!errors.motherDetails} />
+                <Form.Control.Feedback type="invalid">Mother's details are required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Brothers</Form.Label>
                 <Form.Control type="text" placeholder="e.g., 2 Brothers (1 Married)" {...register('brothers', { required: true })} isInvalid={!!errors.brothers} />
+                <Form.Control.Feedback type="invalid">Brothers info is required.</Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Sisters</Form.Label>
                 <Form.Control type="text" placeholder="e.g., 1 Doctor histopathologist" {...register('sisters', { required: true })} isInvalid={!!errors.sisters} />
+                <Form.Control.Feedback type="invalid">Sisters info is required.</Form.Control.Feedback>
               </Form.Group>
             </motion.div>
           )}
@@ -203,6 +215,7 @@ Address: ${data.homeAddress}
               <Form.Group className="mb-3">
                 <Form.Label>Home Address</Form.Label>
                 <Form.Control as="textarea" rows={2} placeholder="e.g., near Rehmat Center Kachery, Multan City" {...register('homeAddress', { required: true })} isInvalid={!!errors.homeAddress} />
+                <Form.Control.Feedback type="invalid">Home address is required.</Form.Control.Feedback>
               </Form.Group>
               
               <div className="alert alert-warning mt-4">

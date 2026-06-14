@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { useTheme } from 'next-themes';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,18 +33,18 @@ export default function Header() {
     <Navbar 
       expand="lg" 
       sticky="top" 
-      className={`transition-all duration-300 py-3 ${scrolled ? 'bg-white shadow-sm' : 'bg-white'}`}
+      className={`transition-all duration-300 py-3 ${scrolled ? 'glass-panel shadow-sm border-bottom-0' : 'bg-transparent'}`}
       style={{ transition: 'all 0.3s ease-in-out' }}
     >
       <Container>
         <Navbar.Brand href="/" onClick={(e) => scrollToSection(e, 'hero')} className="d-flex align-items-center cursor-pointer">
-          <img 
+          <Image 
             src="/logo.png" 
             alt="uzmashadi.com Logo" 
-            width="50" 
-            height="50" 
+            width={50} 
+            height={50} 
             className="d-inline-block align-text-top rounded-circle me-3 border border-2" 
-            style={{ borderColor: 'var(--secondary-color)' }} 
+            style={{ borderColor: 'var(--secondary-color)', objectFit: 'cover' }} 
           />
           <span className="fw-bold fs-4" style={{ color: 'var(--primary-color)' }}>uzmashadi.com</span>
         </Navbar.Brand>
