@@ -186,12 +186,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .scroll-left {
   animation-name: scrollLeft;
-  animation-duration: 45s; /* Adjust speed as needed */
+  animation-duration: 300s; /* Much slower for better readability */
 }
 
 .scroll-right {
   animation-name: scrollRight;
-  animation-duration: 45s; /* Adjust speed as needed */
+  animation-duration: 300s; /* Much slower for better readability */
 }
 
 @keyframes scrollLeft {
