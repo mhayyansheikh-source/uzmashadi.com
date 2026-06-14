@@ -13,8 +13,8 @@ export default function Home() {
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
-              <div className="d-inline-flex align-items-center bg-white rounded-pill px-3 py-2 mb-4 shadow-sm">
-                <FaMapMarkerAlt className="text-success me-2" />
+              <div className="d-inline-flex align-items-center bg-white rounded-pill px-3 py-2 mb-4 shadow-sm border border-1 border-light">
+                <img src="/logo.png" alt="Icon" width="24" height="24" className="rounded-circle me-2" />
                 <span className="fw-semibold text-secondary">#1 Matchmaker in Multan</span>
               </div>
               
@@ -159,8 +159,12 @@ export default function Home() {
       </section>
       
       {/* Footer */}
-      <footer className="bg-dark text-white py-4 text-center">
+      <footer className="bg-dark text-white py-5 text-center">
         <Container>
+          <div className="mb-4">
+            <img src="/logo.png" alt="Uzma Shadi Logo" width="80" height="80" className="rounded-circle mb-3 border border-3" style={{ borderColor: 'var(--secondary-color)' }} />
+            <h4 className="fw-bold text-gold">Uzma Shadi</h4>
+          </div>
           <div className="mb-3 d-flex justify-content-center gap-3">
             <a href="/privacy-policy" className="text-white text-decoration-none small">Privacy Policy</a>
             <span className="text-muted">|</span>

@@ -23,6 +23,14 @@ export default function RootLayout({
       </head>
       <body>
         <FomoBar />
+        <nav className="navbar navbar-light bg-white shadow-sm py-3 sticky-top">
+          <div className="container">
+            <a className="navbar-brand d-flex align-items-center" href="/">
+              <img src="/logo.png" alt="Uzma Shadi Logo" width="50" height="50" className="d-inline-block align-text-top rounded-circle me-3 border border-2" style={{ borderColor: 'var(--secondary-color)' }} />
+              <span className="fw-bold fs-4" style={{ color: 'var(--primary-color)' }}>Uzma Shadi</span>
+            </a>
+          </div>
+        </nav>
         <main>
           {children}
         </main>
